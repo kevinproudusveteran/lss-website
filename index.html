@@ -221,14 +221,16 @@
             display: flex;
             gap: 30px;
             justify-content: center;
+            flex-wrap: wrap; /* Allows cards to drop to the next line */
         }
 
         .service-card {
             background: var(--white);
             padding: 30px;
-            flex: 1;
+            flex: 1 1 300px; /* Allows cards to be flexible but maintain a minimum width */
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
             border-top: 4px solid var(--gold);
+            text-align: left;
         }
 
         .service-card h3 {
@@ -303,7 +305,7 @@
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
             .nav-links {
-                display: none; /* In a full build, add a hamburger menu here */
+                display: none; 
             }
             .about-flex, .services-grid, .contact-flex {
                 flex-direction: column;
@@ -319,12 +321,12 @@
     <header>
         <div class="nav-container">
             <div class="logo">
-                <img src="Letterhead.jng" alt="Lonergan Security Solutions LLC">
+                <img src="Letterhead.jpg" alt="Lonergan Security Solutions LLC">
             </div>
             <nav class="nav-links">
                 <a href="#about">About Us</a>
                 <a href="#services">Services</a>
-                <a href="#areas">Jurisdiction</a>
+                <a href="#areas">Service Area</a>
                 <a href="#contact" class="btn">Free Consultation</a>
             </nav>
         </div>
@@ -339,7 +341,7 @@
             <a href="#contact" class="btn">Request a Confidential Consultation</a>
             
             <div class="trust-badges">
-                NYS Licensed Private Investigator | FBI NA Graduate | NYPD Sgt. (Ret)| Marine Veteran
+                NYS Private Investigator License Pending | FBI National Academy Graduate | ASIS NYC Chapter Member
             </div>
         </div>
     </section>
@@ -356,8 +358,9 @@
                 <p>His public-private sector crossover is backed by a decorated career as a retired Sergeant with the New York City Police Department (NYPD) and service as a veteran of the United States Marine Corps.</p>
                 
                 <ul class="credentials-list">
-                    <li>NYS Private Investigator License: 123456</li>
+                    <li>NYS Private Investigator License: Pending</li>
                     <li>FBI National Academy: Session #251 Graduate</li>
+                    <li>ASIS NYC Chapter Member</li>
                     <li>H.R. 218 LEOSA Certified / NYS Full Carry Pistol Permit</li>
                 </ul>
             </div>
@@ -377,6 +380,16 @@
                     <p>Precision evidence gathering, meticulous surveillance, and expert witness interviewing designed to withstand rigorous courtroom scrutiny in civil and family law matters.</p>
                 </div>
                 <div class="service-card">
+                    <h3>Site Security Assessments</h3>
+                    <p>Comprehensive physical security audits, vulnerability assessments, and risk mitigation strategies tailored for corporate facilities, private estates, and critical infrastructure.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Active Shooter Training & Situational Awareness</h3>
+                    <p>Expert-led preparedness training tailored for corporate teams and high-net-worth families, focusing on threat recognition, crisis response, and dynamic survival strategies.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Background Checks</h3>
+                    <p>In-depth due diligence, executive vetting, and comprehensive pre-employment screening to protect corporate integrity and mitigate insider threats before they occur.</p>
                 </div>
             </div>
         </div>
@@ -384,7 +397,7 @@
 
     <section id="areas">
         <div class="container">
-            <h2>Serice Area</h2>
+            <h2>Service Area</h2>
             <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 20px auto;">Headquartered in Tuckahoe, NY, Lonergan Security Solutions provides rapid-response, elite investigative services across primary operational theaters:</p>
             <h3 style="color: var(--white); font-size: 1.8rem; margin-bottom: 5px;">Westchester County & New York City</h3>
             <p style="color: #bdc3c7; font-style: italic;">National and international consulting available upon request for corporate retainers.</p>
@@ -398,13 +411,13 @@
                 <p style="margin-bottom: 30px;">All inquiries are strictly confidential and protected by absolute discretion.</p>
                 
                 <div class="info-block">
-                    <strong>Located in:</strong>
-                    <br>Tuckahoe, NY
+                    <strong>Corporate Headquarters</strong>
+                    Tuckahoe, NY
                 </div>
                 <div class="info-block">
                     <strong>Direct Contact</strong>
                     Phone: (914) 350-8852<br>
-                    Email: contact@lonergan.com
+                    Email: contact@lonergansecuritysolutions.com
                 </div>
                 <div class="info-block">
                     <strong>Licensing</strong>
@@ -413,7 +426,7 @@
             </div>
             
             <div class="contact-form">
-                <form action="mailto:contact@lss-nyc.com" method="post" enctype="text/plain">
+                <form action="mailto:contact@lonergansecuritysolutions.com" method="post" enctype="text/plain">
                     <input type="text" name="Name" placeholder="Full Name" required>
                     <input type="email" name="Email" placeholder="Email Address" required>
                     <input type="tel" name="Phone" placeholder="Phone Number">
@@ -426,9 +439,5 @@
 
     <footer>
         <div class="container" style="padding: 20px 0;">
-            &copy; 2026 Lonergan Security Solutions LLC. All Rights Reserved. Discreet • Diligent • Dedicated.
-        </div>
-    </footer>
-
-</body>
-</html>
+            &copy; 2026 L
+    
